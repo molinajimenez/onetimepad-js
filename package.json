@@ -1,0 +1,25 @@
+{
+  "name": "onetimepad",
+  "version": "1.0.0",
+  "description": "simple one time pad encrypter/decrypter",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molinajimenez/onetimepad-js.git"
+  },
+  "keywords": [
+    "js",
+    "cipher",
+    "encrypt"
+  ],
+  "author": "Francisco Molina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molinajimenez/onetimepad-js/issues"
+  },
+  "homepage": "https://github.com/molinajimenez/onetimepad-js#readme"
+}
