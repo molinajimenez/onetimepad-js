@@ -1,5 +1,5 @@
 {
-  "name": "onetimepad",
+  "name": "onetimepad-js",
   "version": "1.0.0",
   "description": "simple one time pad encrypter/decrypter",
   "main": "main.js",
