@@ -3,6 +3,7 @@ Start project for a (possible) npm package, this is a homework for my faculty an
 
 ## Requirements
 * Node V10+
+* NPM V6+
 
 
 ## Installation
