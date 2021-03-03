@@ -1,6 +1,7 @@
 import Encrypter from './Cipher.js'
 
 
-let enc = new Encrypter("hola");
+let enc = new Encrypter();
 
-console.log(enc.encrypt());
+enc.encrypt("hola");
+console.log(enc.decrypt());
