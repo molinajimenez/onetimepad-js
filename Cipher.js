@@ -1,5 +1,6 @@
-import {latin_alphabet} from "./helper/alphabets.js"
-
+import { exit } from "process";
+import {latin_alphabet} from "./helper/alphabets.js";
+import * as fs from 'fs';
 export default class Encrypter {
   constructor() {
     this.txt = undefined;
@@ -68,9 +69,26 @@ export default class Encrypter {
 
     ans = ans.split(" ");
     ans.pop();
-    
     return ans
+  }
 
+  dump_key = () =>{
+    fs.writeFile("otp_key.txt", this.key, (err) =>{
+      if(err){
+        console.error("Cannot create .txt:", err);
+        exit(-1);
+      }
+    });
+  }
+
+  import_key = () =>{
+    fs.readFile("otp_key.txt", (err, txt) =>{
+      if(err){
+        console.error("Cannot read .txt", err);
+        exit(-1);
+      }
+      this.key = txt.toString();
+    });
   }
 }
 
